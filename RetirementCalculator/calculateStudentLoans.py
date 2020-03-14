@@ -4,13 +4,15 @@ STUDENT_LOAN_REPAYMENT_TOTALS = [0, 0.01, 0.02, 0.025, 0.03, 0.035, 0.04, 0.045,
                                  0.08, 0.085, 0.09, 0.095, 0.1]
 
 
-def calculate_student_loans(annual_income):
+def calculate_student_loans(annual_income, current_student_loans):
     student_loan_threshold = calculate_student_loan_threshold(annual_income)
-    return annual_income * STUDENT_LOAN_REPAYMENT_TOTALS[student_loan_threshold]
+    student_loan_repayment = annual_income * STUDENT_LOAN_REPAYMENT_TOTALS[student_loan_threshold]
+    return min(student_loan_repayment, current_student_loans)
 
 
-def calculate_monthly_student_loan_payment(annual_income):
-    return calculate_student_loans(annual_income) / 12
+def calculate_monthly_student_loan_payment(annual_income, current_student_loans):
+    student_loan_repayment = calculate_student_loans(annual_income, current_student_loans) / 12
+    return min(student_loan_repayment, current_student_loans)
 
 
 def calculate_student_loan_threshold(income):
