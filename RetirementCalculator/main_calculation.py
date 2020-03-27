@@ -1,4 +1,5 @@
-from RetirementCalculator.calculate_net_income import calculate_net_income
+from RetirementCalculator.calculate_net_income import calculate_monthly_net_income
+from RetirementCalculator.calculate_student_loans import calculate_student_loans
 
 ANNUAL_GROWTH_RATE = 0.07
 ANNUAL_INFLATION_RATE = 0.03
