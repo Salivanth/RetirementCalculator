@@ -1,5 +1,5 @@
 import unittest
-from RetirementCalculator.calculateSalarySacrifice import *
+from RetirementCalculator.calculate_salary_sacrifice import calculate_salary_sacrifice
 
 
 class TestCalculateSalarySacrifice(unittest.TestCase):

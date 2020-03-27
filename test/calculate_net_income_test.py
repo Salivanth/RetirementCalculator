@@ -1,5 +1,5 @@
 import unittest
-from RetirementCalculator.calculateNetIncome import *
+from RetirementCalculator.calculate_net_income import calculate_net_income
 
 
 class TestCalculateNetIncome(unittest.TestCase):
@@ -27,4 +27,3 @@ class TestCalculateNetIncome(unittest.TestCase):
     def test_calculate_net_income_from_high_income_and_no_student_loans(self):
         net_income = calculate_net_income(280000, 280000, 0)
         self.assertEqual(net_income, 176704)
-

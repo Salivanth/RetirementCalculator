@@ -1,5 +1,5 @@
 import unittest
-from RetirementCalculator.calculateStudentLoans import *
+from RetirementCalculator.calculate_student_loans import calculate_student_loans
 
 
 class TestCalculateStudentLoans(unittest.TestCase):

@@ -1,4 +1,4 @@
-from RetirementCalculator.calculateNetIncome import *
+from RetirementCalculator.calculate_net_income import calculate_net_income
 
 ANNUAL_GROWTH_RATE = 0.07
 ANNUAL_INFLATION_RATE = 0.03
@@ -26,7 +26,7 @@ def main_calculation(current_savings, current_salary, current_compensation_packa
         total_savings += (net_income - expenses)
 
     print(str(months))
-    print(str(total_savings) + " / " + str(goal_savings))
+    print(str(int(total_savings)) + " / " + str(int(goal_savings)))
 
 
 main_calculation(100000, 104000, 104000, 20000, 28000)

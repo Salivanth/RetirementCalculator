@@ -1,5 +1,5 @@
 import unittest
-from RetirementCalculator.calculateTax import *
+from RetirementCalculator.calculate_tax import calculate_tax
 
 
 class TestCalculateTax(unittest.TestCase):
@@ -31,4 +31,3 @@ class TestCalculateTax(unittest.TestCase):
     def test_calculate_tax_above_highest_threshold(self):
         tax_payable = calculate_tax(280000)
         self.assertAlmostEqual(tax_payable, 103296)
-

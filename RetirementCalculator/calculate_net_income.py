@@ -1,6 +1,6 @@
-from RetirementCalculator.calculateSalarySacrifice import *
-from RetirementCalculator.calculateStudentLoans import *
-from RetirementCalculator.calculateTax import *
+from RetirementCalculator.calculate_salary_sacrifice import calculate_salary_sacrifice
+from RetirementCalculator.calculate_student_loans import calculate_student_loans
+from RetirementCalculator.calculate_tax import calculate_tax
 
 SALARY_SACRIFICE_TAX_RATE = 0.15
 
